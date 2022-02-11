@@ -1,6 +1,16 @@
+
+
 export default function Yoyo(props){
-    console.log(props);
+
+  const {hoyya, state} = props;
+
     return(
-      <h1>{props.content}</h1>
+        <div>
+
+            
+            <h1>{hoyya} {state}</h1>
+           
+        </div>
     )
   }
+

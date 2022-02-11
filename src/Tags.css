@@ -1,0 +1,12 @@
+.tags_section{
+    margin-top: 1rem;
+    background-color: aquamarine;
+    color: rgb(255, 0, 43);
+    font-size: 20px;
+    display: flex;
+    width: min-content;
+}
+.tag_state{
+    color: blue;
+    font-size: 2.5rem;
+}

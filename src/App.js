@@ -1,19 +1,30 @@
 import './App.css'
 import Yoyo from './Yoyo'
+import Counterdad from './Counterdad'
+import { useState } from 'react'
 
 function App() {
 
   const data = "props data";
 
+  const [state, setState] = useState(0);
+
+  const addCount = () => {
+    setState(state + 1);
+  }
+
+  let obj = {
+    hoyya : "First: ",
+    state
+  }
+
   return (
     <div>
-        <h1 className="demo">Helloi worrrld....</h1>
-        <h1>yyooo..... {data}</h1>
-
-        <Yoyo content = {`sdfkjhdhkdhjkdhdhka`}/>
        
-        
-
+       <button onClick={addCount}>Add count</button>
+        <Yoyo {...obj} />
+        <Yoyo hoyya = "Second: " state = { state } />
+        <Counterdad />
     </div>
   );
 }
