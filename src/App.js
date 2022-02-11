@@ -1,28 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Yoyo from './Yoyo'
 
 function App() {
+
+  const data = "props data";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hoyyyaaaa.......its started react man.....buhahhaha........</h1>
-        <h1>Hihihihihi....</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <h1 className="demo">Helloi worrrld....</h1>
+        <h1>yyooo..... {data}</h1>
+
+        <Yoyo content = {`sdfkjhdhkdhjkdhdhka`}/>
+       
+        
 
     </div>
   );
 }
 
 export default App;
+
